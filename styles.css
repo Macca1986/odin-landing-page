@@ -23,7 +23,7 @@ a {
 .hero-section,
 .footer {
     color: white;
-    background-color: #1F2637;
+    background-color: #1F2937;
     display: flex;
 }
 
@@ -96,10 +96,53 @@ button {
 
 .information-section {
     background-color: white;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+}
+
+.info-heading {
+    font-size: 36px;
+    color: #1F2937;
+    font-weight: 900;
+    margin-bottom: 50px;
+}
+
+.info-content {
+    display: flex;
+    gap: 48px;
+}
+
+.info-card {
+    width: 150px;
+}
+
+.info-img {
+    width: 148px;
+    height: 150px;
+    border-radius: 10px;
+    border: 3px solid #3882F6;
+    margin-bottom: 10px;
 }
 
 .quote-section {
     background-color: #E5E7EB;
+    padding: 0 300px;
+    display: flex;
+    flex-direction: column;
+}
+
+.quote {
+    font-size: 36px;
+    color: #1F2937;
+    font-weight: lighter;
+    font-style: italic;
+}
+
+.quote-author {
+    align-self: flex-end;
+    margin-right: 50px;
 }
 
 .footer {
