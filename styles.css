@@ -1,12 +1,14 @@
 * {
     font-family: 'Roboto', sans-serif;
+    box-sizing: border-box;
 }
 
 body {
     display: flex;
     flex-direction: column;
     justify-content: space-between;
-    flex-grow: 1;
+    align-items: center;
+    flex: 1 1 0;
     height: 100vh;
     margin: 0;
     padding: 0;
@@ -29,7 +31,7 @@ a {
 
 .hero-section { 
     justify-content: space-between;
-    padding: 0 15%;
+    padding: 80px 15%;
 }
 
 .call-section {
@@ -40,7 +42,8 @@ a {
 .header {
     align-items: center;
     justify-content: space-between;
-    height: 60px;
+    min-height: 60px;
+    width: 100%;
 }
 
 .header-left {
@@ -68,7 +71,8 @@ a {
 }
 
 a,
-.hero-secondary-text {
+.hero-secondary-text,
+.call-to-action-text {
     font-size: 18px;
     color: #E5E7EB;
     font-weight: 300;
@@ -100,6 +104,8 @@ button {
     flex-direction: column;
     align-items: center;
     text-align: center;
+    padding-top: 60px;
+    padding-bottom: 80px;
 }
 
 .info-heading {
@@ -115,20 +121,28 @@ button {
 }
 
 .info-card {
-    width: 150px;
+    width: 170px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
 }
 
 .info-img {
-    width: 148px;
+    width: 150px;
     height: 150px;
     border-radius: 10px;
     border: 3px solid #3882F6;
     margin-bottom: 10px;
 }
 
+.info-text {
+    font-size: 18px;
+}
+
 .quote-section {
     background-color: #E5E7EB;
-    padding: 0 300px;
+    padding: 100px 300px;
     display: flex;
     flex-direction: column;
 }
@@ -145,9 +159,30 @@ button {
     margin-right: 50px;
 }
 
+.call-section {
+    width: 70%;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 30px 80px;
+    border-radius: 10px;
+    margin: 80px 0;
+}
+
+.call-to-action-heading {
+    font-size: 22px;
+    font-weight: 500;
+}
+
+#call-sign-up-btn {
+    border: 2px solid white;
+    border-radius: 10px;
+}
+
 .footer {
     display: flex;
     justify-content: center;
     align-items: center;
-    height: 100px;
+    min-height: 100px;
+    width: 100%;
 }
